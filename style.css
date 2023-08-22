@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    border: 1px solid #f1f1f1;
+    margin: 20px auto;
+    min-height: 100vh;
+    width: 500px;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0px;
+    position: relative;
+}
+
+p, .tab, .grey-color, a {
+    color: #536471;
+}
+
+p {
+    font-size: .9rem;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.twitter-verified-badge {
+    height: 20px;
+    left: 90px;
+    position: absolute;
+    top: 2px;
+    width: 20px;
+}
+
+
+.back-button {
+    background: none;
+    border: none;
+    color: #1DA1F2;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.follow-button {
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 20px;
+    bottom: 110px;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    margin-left: 77.5%;
+    width: 100px;
+}
+
+.follow-button:hover, .back-button:hover {
+    cursor: pointer;
+}
+
+.cover-photo-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 175px;
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.avatar {
+    border: 3px solid white;
+    border-radius: 50%;
+    bottom: -55px;
+    box-sizing: border-box;
+    height: 120px;
+    left: 10px;
+    position: absolute;
+    width: 120px;
+}
+
+.avatar-tiny {
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+}
+
+.profile-details-container {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 60px;
+    
+}
+
+.calendar-icon {
+    background-color: #E1E8ED;
+    height: 15px;
+}
+
+.profile-details-container  p {
+    margin-bottom: 10px;
+}
+
+.black-bold-font {
+    color: #0F1419;
+    font-weight: 700;
+}
+
+
+.profile-details-container span ~ span {
+    margin-left: 15px;
+}
+
+.container {
+    border: 1px solid grey;
+    height: 50%;
+    margin: 0 auto;
+    width: 80%;
+}
+.selector {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.tab:hover {
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.897);
+}
+.content {
+    padding: 10px 0;
+}
+
+.content-body {
+    display: none;
+}
+
+.show-active {
+    animation: fade 1s;
+    display: block;
+}
+
+.tab-active {
+    border-bottom: solid 4px #1DA1F2;
+    color: #0F1419;
+    font-weight: bold;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tweet {
+    border: solid 1px #E1E8ED;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.tweet-content {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.tweet-header .twitter-verified-badge {
+    height: 16px;
+    left: 0;
+    position: relative;
+    top: 2px;
+    width: 16px;
+}
+
+.dot-seperator {
+    border: solid 1px #536471; 
+    border-radius: 50%;
+    margin: 3px;
+    display: inline-block;
+    height: 1px;
+    width: 1px;
+}
+
+.tweet-text {
+    margin: 5px 0;
+}
+
+.tweet-icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.tweet-icons a {
+    text-decoration: none;
+}
+
+.tweet-icons a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.tweet-icon {
+    height: 18.75px;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+    width: 18.75px;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.grey-icon {
+    opacity: 0.5;
+}
+
+.hover-blue:hover {
+    color:#1DA1F2;
+}
+
+.hover-green:hover {
+    color:#29910a;
+}
+
+.hover-pink:hover {
+    color:#ff008c;
+}
+
