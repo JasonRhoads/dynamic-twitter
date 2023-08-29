@@ -115,22 +115,22 @@ $('.tweets-container').html(`
     </div>
 </div>
 <div class="content">
-    <div id="tweets" class="content-body show-active">
+    <div id="Tweets" class="content-body show-active">
     </div>
-    <div id="tweets-replies" class="content-body">
+    <div id="Tweets & replies" class="content-body">
         <p>tweets and replies</p>
     </div>
-    <div id="media" class="content-body">
+    <div id="Media" class="content-body">
         <p>media</p>
     </div>
-    <div id="likes" class="content-body">
+    <div id="Likes" class="content-body">
         <p>likes</p>
     </div>
 </div>
 `);
 
 for (let i = 0; i < user.tweets.length; i++) {
-    $('#tweets').append(`<div class="tweet">
+    $('#Tweets').append(`<div class="tweet">
     <div> 
         <img class="avatar-tiny" src=${user.avatarURL} /> 
     </div>
@@ -176,31 +176,31 @@ function roundNumber(number) {
 }
 
 // //function to remove show-active class & add to clicked 
-// function setNewActive(el) {
-//     //select all .content-body
-//     let contentBodies = document.getElementsByClassName('content-body');
-//     //remove. show-active
-//     for (let contentBody of contentBodies) {
-//         contentBody.classList.remove('show-active');
-//     }
-//     //add .show-active back to clicked
-//     document.getElementById(el.textContent.trim()).classList.add('show-active');
+function setNewActive(el) {
+    //select all .content-body
+    let contentBodies = document.getElementsByClassName('content-body');
+    //remove. show-active
+    for (let contentBody of contentBodies) {
+        contentBody.classList.remove('show-active');
+    }
+    //add .show-active back to clicked
+    document.getElementById(el.textContent.trim()).classList.add('show-active');
 
-//     let tabs = document.getElementsByClassName('tab');
+    let tabs = document.getElementsByClassName('tab');
 
-//     for (let tab of tabs) {
-//         tab.classList.remove('tab-active');
-//     }
-//     el.classList.add('tab-active');
-// }
+    for (let tab of tabs) {
+        tab.classList.remove('tab-active');
+    }
+    el.classList.add('tab-active');
+}
 
 
-// //select tab class, and loop through
-// let tabs = document.getElementsByClassName('tab');
-// for (var tab of tabs) {
-//     //add click listener to each tab
-//     tab.addEventListener('click', e => {
-//         setNewActive(e.currentTarget);
-//     })
-// }
+//select tab class, and loop through
+let tabs = document.getElementsByClassName('tab');
+for (var tab of tabs) {
+    //add click listener to each tab
+    tab.addEventListener('click', e => {
+        setNewActive(e.currentTarget);
+    })
+ }
     
